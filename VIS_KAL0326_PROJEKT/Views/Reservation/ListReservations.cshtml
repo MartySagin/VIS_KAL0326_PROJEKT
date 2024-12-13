@@ -1,0 +1,65 @@
+﻿@model IEnumerable<DataAccess.Models.Reservation>
+
+@{
+    ViewData["Title"] = "Moje rezervace";
+}
+
+<h2>Moje rezervace</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>Název klubu</th>
+                <th>Datum rezervace</th>
+                <th>Počet osob</th>
+                <th>Stav</th>
+                <th>Celková cena</th>
+                <th>Akce</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reservation in Model)
+            {
+                <tr>
+                    <td>@reservation.Club.Name</td>
+                    <td>@reservation.ReservationDate.ToString("dd.MM.yyyy")</td>
+                    <td>@reservation.NumberOfPeople</td>
+                    <td>@reservation.State</td>
+                    <td>@reservation.Price Kč</td>
+                    @if (reservation.State == "Confirmed")
+                    {
+                        <td>
+                            <form method="post" asp-controller="Reservation" asp-action="PayReservation">
+                                <input type="hidden" name="ReservationId" value="@reservation.ReservationId" />
+
+                                <button type="submit" class="btn btn-success">Zaplatit</button>
+                            </form>
+                        </td>
+                    }
+                    else if (reservation.State == "Paid")
+                    {
+                        <td>
+                            <span class="text-success">Zaplaceno</span>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <form method="post" asp-controller="Reservation" asp-action="DeleteReservation">
+                                <input type="hidden" name="ReservationId" value="@reservation.ReservationId" />
+
+                                <button type="submit" class="btn btn-danger">Zrušit</button>
+                            </form>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p class="text-warning mt-4">Nemáte žádné rezervace.</p>
+}

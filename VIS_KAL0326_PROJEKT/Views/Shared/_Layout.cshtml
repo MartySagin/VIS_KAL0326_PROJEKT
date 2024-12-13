@@ -23,8 +23,14 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Domovská stránka</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Club" asp-action="Search">Vyhledat kluby</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Club" asp-action="SearchClubs">Vyhledat kluby</a>
                         </li>
+                        @if (ViewBag.IsLoggedIn == true)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="ListReservations">Moje rezervace</a>
+                            </li>
+                        }
                     </ul>
                     <ul class="navbar-nav">
                         @if (ViewBag.IsLoggedIn == true)

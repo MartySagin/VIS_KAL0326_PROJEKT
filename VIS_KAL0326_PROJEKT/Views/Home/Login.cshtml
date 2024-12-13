@@ -2,27 +2,36 @@
     ViewData["Title"] = "Login";
 }
 
-<div class="text-center">
-    <h2>Login</h2>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header text-center bg-primary text-white">
+                    <h2>Přihlášení</h2>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.ErrorMessage != null)
+                    {
+                        <div class="alert alert-danger text-center" role="alert">
+                            @ViewBag.ErrorMessage
+                        </div>
+                    }
 
-    @if (ViewBag.ErrorMessage != null)
-    {
-        <p style="color: red;">@ViewBag.ErrorMessage</p>
-    }
+                    <form method="post" action="/Home/Login">
+                        <div class="form-group mb-3">
+                            <label for="username" class="form-label">Uživatelské jméno</label>
+                            <input type="text" id="username" name="username" class="form-control" required placeholder="Zadejte uživatelské jméno" />
+                        </div>
 
-    <form method="post" action="/Home/Login">
-        <div style="margin-bottom: 10px;">
-            <label for="username">Username</label>
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Heslo</label>
+                            <input type="password" id="password" name="password" class="form-control" required placeholder="Zadejte heslo" />
+                        </div>
 
-            <input type="text" id="username" name="username" required />
+                        <button type="submit" class="btn btn-primary w-100">Přihlásit se</button>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <div style="margin-bottom: 10px;">
-            <label for="password">Password</label>
-
-            <input type="password" id="password" name="password" required />
-        </div>
-
-        <button type="submit">Login</button>
-    </form>
+    </div>
 </div>

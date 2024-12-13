@@ -19,7 +19,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
         }
 
         [HttpGet]
-        public IActionResult Search()
+        public IActionResult SearchClubs()
         {
             ViewBag.IsLoggedIn = _loginService.Authorize(Request.Cookies["UserToken"]);
 
@@ -27,7 +27,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Search(string name, string address, string type, int? capacity, int? priceFrom, int? priceTo, DateTime reservationDate)
+        public async Task<IActionResult> SearchClubs(string name, string address, string type, int? capacity, int? priceFrom, int? priceTo, DateTime reservationDate)
         {
             var clubs = await _clubRepository.GetFilteredClubsAsync(name, address, type, capacity, priceFrom, priceTo, reservationDate);
 

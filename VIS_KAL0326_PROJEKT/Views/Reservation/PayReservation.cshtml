@@ -1,0 +1,53 @@
+﻿@model DataAccess.Models.Reservation
+
+@{
+    ViewData["Title"] = "Platba rezervace";
+}
+
+<h2>Platba rezervace</h2>
+
+<div class="card mt-4">
+    <div class="card-header">
+        Shrnutí rezervace
+    </div>
+    <div class="card-body">
+        <p><strong>Název klubu:</strong> @Model.Club.Name</p>
+        <p><strong>Datum rezervace:</strong> @Model.ReservationDate.ToString("dd.MM.yyyy")</p>
+        <p><strong>Počet osob:</strong> @Model.NumberOfPeople</p>
+        <p><strong>Celková cena k uhrazení:</strong> @Model.Price Kč</p>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-header">
+        Výběr způsobu platby
+    </div>
+    <div class="card-body">
+        <form method="post" asp-controller="Reservation" asp-action="ConfirmPayment">
+            <input type="hidden" name="ReservationId" value="@Model.ReservationId" />
+
+            <div class="form-group">
+                <label for="paymentMethod"><strong>Způsob platby:</strong></label>
+                <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="PaymentMethod" id="paymentCard" value="Card" required />
+
+                        <label class="form-check-label" for="paymentCard">Kartou</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="PaymentMethod" id="paymentCash" value="Cash" required />
+
+                        <label class="form-check-label" for="paymentCash">Hotově</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a asp-action="ListReservations" asp-controller="Reservation" class="btn btn-secondary">Zpět</a>
+
+                <button type="submit" class="btn btn-primary">Zaplatit rezervaci</button>
+            </div>
+        </form>
+    </div>
+</div>

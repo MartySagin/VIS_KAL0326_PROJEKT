@@ -52,7 +52,18 @@ namespace VIS_KAL0326_PROJEKT.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateReservation(int ClubId, int UserId, DateTime ReservationDate, int NumberOfPeople, int Price)
         {
-          
+            
+            var token = Request.Cookies["UserToken"];
+
+            if (!_loginService.Authorize(token))
+            {
+                ViewBag.IsLoggedIn = false;
+
+                return RedirectToAction("Login", "Home");
+            }
+
+            ViewBag.IsLoggedIn = true;
+
             var reservation = new Reservation
             {
                 ClubId = ClubId,
@@ -66,9 +77,102 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             await _reservationRepository.AddReservationAsync(reservation);
 
-            TempData["SuccessMessage"] = "Rezervace byla úspěšně vytvořena!";
+            return RedirectToAction("SearchClubs", "Club");
+        }
 
-            return RedirectToAction("Search", "Club");
+        [HttpGet]
+
+        public async Task<IActionResult> ListReservations()
+        {
+            var token = Request.Cookies["UserToken"];
+
+            if (!_loginService.Authorize(token))
+            {
+                ViewBag.IsLoggedIn = false;
+
+                return RedirectToAction("Login", "Home");
+            }
+
+            ViewBag.IsLoggedIn = true;
+
+            var userId = _loginService.ExtractUserIdFromToken(token);
+
+            var reservations = await _reservationRepository.GetReservationsByUserIdAsync(userId ?? -1);
+
+            return View(reservations);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PayReservation(int ReservationId)
+        {
+            var token = Request.Cookies["UserToken"];
+
+            if (!_loginService.Authorize(token))
+            {
+                ViewBag.IsLoggedIn = false;
+
+                return RedirectToAction("Login", "Home");
+            }
+
+            ViewBag.IsLoggedIn = true;
+
+            var reservation = await _reservationRepository.GetReservationByIdAsync(ReservationId);
+
+            if (reservation == null)
+            {
+                return NotFound("Reservation not found.");
+            }
+
+            if (reservation.State != "Confirmed")
+            {
+                return RedirectToAction("ListReservations");
+            }
+
+            return View("PayReservation", reservation);
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> ConfirmPayment(int ReservationId)
+        {
+            var token = Request.Cookies["UserToken"];
+
+            if (!_loginService.Authorize(token))
+            {
+                ViewBag.IsLoggedIn = false;
+
+                return RedirectToAction("Login", "Home");
+            }
+
+            ViewBag.IsLoggedIn = true;
+
+            var reservation = await _reservationRepository.GetReservationByIdAsync(ReservationId);  
+
+            reservation.State = "Paid";
+
+            _reservationRepository.UpdateReservationAsync(reservation);
+
+            return RedirectToAction("ListReservations");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> DeleteReservation(int ReservationId    )
+        {
+            var token = Request.Cookies["UserToken"];
+
+            if (!_loginService.Authorize(token))
+            {
+                ViewBag.IsLoggedIn = false;
+
+                return RedirectToAction("Login", "Home");
+            }
+
+            ViewBag.IsLoggedIn = true;
+
+            await _reservationRepository.DeleteReservationAsync(ReservationId);
+
+            return RedirectToAction("ListReservations");
         }
 
     }

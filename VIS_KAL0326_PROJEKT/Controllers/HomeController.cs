@@ -73,6 +73,8 @@ namespace VIS_KAL0326_PROJEKT.Controllers
             {
                 _loginService.Logout(token);
 
+                ViewBag.isLoggedIn = false;
+
                 Response.Cookies.Delete("UserToken");
             }
 

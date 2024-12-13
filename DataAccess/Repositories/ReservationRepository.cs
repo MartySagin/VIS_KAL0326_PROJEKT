@@ -30,15 +30,16 @@ namespace DataAccess.Repositories
         public async Task<Reservation> GetReservationByIdAsync(int reservationId)
         {
             var sql = @"
-                SELECT r.ReservationId, r.ReservationDate, r.NumberOfPeople, r.IsConfirmed, r.State, 
-                       r.Price, r.ClubId, r.UserId,
-                       c.Name AS ClubName, u.Email AS UserEmail
+                SELECT r.ReservationId, r.ReservationDate, r.NumberOfPeople, r.IsConfirmed, r.State, r.Price, r.ClubId, r.UserId
                 FROM Reservations r
-                JOIN Clubs c ON r.ClubId = c.ClubId
-                JOIN Users u ON r.UserId = u.UserId
                 WHERE r.ReservationId = @ReservationId";
 
             var reservations = await _databaseAccess.ExecuteQueryAsync<Reservation>(sql, new { ReservationId = reservationId });
+
+            foreach (var reservation in reservations)
+            {
+                reservation.Club = _databaseAccess.ExecuteQueryAsync<Club>("SELECT * FROM Clubs WHERE ClubId = @ClubId", new { ClubId = reservation.ClubId }).Result.FirstOrDefault() ?? new Club();
+            }
 
             return reservations.FirstOrDefault();
         }
@@ -46,15 +47,19 @@ namespace DataAccess.Repositories
         public async Task<IEnumerable<Reservation>> GetReservationsByUserIdAsync(int userId)
         {
             var sql = @"
-                SELECT r.ReservationId, r.ReservationDate, r.NumberOfPeople, r.IsConfirmed, r.State, 
-                       r.Price, r.ClubId, r.UserId,
-                       c.Name AS ClubName, u.Email AS UserEmail
+                SELECT r.ReservationId, r.ReservationDate, r.NumberOfPeople, r.IsConfirmed, r.State, r.Price, r.ClubId, r.UserId
                 FROM Reservations r
-                JOIN Clubs c ON r.ClubId = c.ClubId
                 JOIN Users u ON r.UserId = u.UserId
                 WHERE r.UserId = @UserId";
 
-            return await _databaseAccess.ExecuteQueryAsync<Reservation>(sql, new { UserId = userId });
+            var reservations = await _databaseAccess.ExecuteQueryAsync<Reservation>(sql, new { UserId = userId });
+
+            foreach (var reservation in reservations)
+            {
+                reservation.Club = _databaseAccess.ExecuteQueryAsync<Club>("SELECT * FROM Clubs WHERE ClubId = @ClubId", new { ClubId = reservation.ClubId }).Result.FirstOrDefault() ?? new Club();
+            }
+
+            return reservations;
         }
 
         public async Task AddReservationAsync(Reservation reservation)
