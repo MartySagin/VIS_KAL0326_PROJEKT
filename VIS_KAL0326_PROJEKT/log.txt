@@ -892,3 +892,30 @@
 (13.12.2024 19:01:49) Warning: Authorization failed. User with ID '5' is not logged in.
 (13.12.2024 19:01:53) Information: User 'admin' authenticated successfully with token '5t7930'.
 (13.12.2024 19:01:53) Information: Token '5t7930' authorized successfully.
+(13.12.2024 19:17:55) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:18:06) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:18:09) Information: User 'admin' authenticated successfully with token '5t6836'.
+(13.12.2024 19:18:09) Information: Token '5t6836' authorized successfully.
+(13.12.2024 19:18:10) Information: Token '5t6836' authorized successfully.
+(13.12.2024 19:18:13) Information: Token '5t6836' authorized successfully.
+(13.12.2024 19:18:18) Information: Token '5t6836' authorized successfully.
+(13.12.2024 19:18:21) Information: Token '5t6836' authorized successfully.
+(13.12.2024 19:18:28) Information: Token '5t6836' authorized successfully.
+(13.12.2024 19:22:36) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:22:40) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:22:43) Information: User 'admin' authenticated successfully with token '5t5566'.
+(13.12.2024 19:22:43) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:22:44) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:22:46) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:22:49) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:22:50) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:22:53) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:22:55) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:24:01) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:24:02) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:24:04) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:24:10) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:24:12) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:24:13) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:24:14) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:24:16) Information: Token '5t5566' authorized successfully.

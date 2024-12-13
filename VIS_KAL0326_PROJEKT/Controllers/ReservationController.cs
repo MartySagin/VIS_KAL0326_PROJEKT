@@ -9,15 +9,15 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 {
     public class ReservationController : Controller
     {
-        private readonly IClubRepository _clubRepository;
-        private readonly IReservationRepository _reservationRepository;
+        private readonly IClubService _clubService;
+        private readonly IReservationService _reservationService;
         private readonly ILoginService _loginService;
 
-        public ReservationController(IClubRepository clubRepository, IReservationRepository reservationRepository, ILoginService loginService)
+        public ReservationController(IClubService clubService, IReservationService reservationService, ILoginService loginService)
         {
-            _clubRepository = clubRepository;
+            _reservationService = reservationService;
 
-            _reservationRepository = reservationRepository;
+            _clubService = clubService;
 
             _loginService = loginService;
         }
@@ -35,7 +35,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             ViewBag.IsLoggedIn = true;
 
-            var club = await _clubRepository.GetClubByIdAsync(ClubId);
+            var club = await _clubService.GetClubByIdAsync(ClubId);
 
             if (club == null)
             {
@@ -88,7 +88,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
                 State = "Pending"
             };
 
-            await _reservationRepository.AddReservationAsync(reservation);
+            await _reservationService.AddReservationAsync(reservation);
 
             return Redirect("ListReservations");
         }

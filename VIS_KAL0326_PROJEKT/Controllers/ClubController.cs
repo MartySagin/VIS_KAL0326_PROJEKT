@@ -8,14 +8,16 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 {
     public class ClubController : Controller
     {
-        private readonly IClubRepository _clubRepository;
+        private readonly IClubService _clubService;
         private readonly IReservationRepository _reservationRepository;
         private readonly ILoginService _loginService;
 
-        public ClubController(IClubRepository clubRepository, IReservationRepository reservationRepository, ILoginService loginService)
+        public ClubController(IClubService clubService, IReservationRepository reservationRepository, ILoginService loginService)
         {
-            _clubRepository = clubRepository;
+            _clubService = clubService;
+
             _reservationRepository = reservationRepository;
+
             _loginService = loginService;
         }
 
@@ -35,7 +37,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
                 return View(model);
             }
 
-            var clubs = await _clubRepository.GetFilteredClubsAsync(model.Name, model.Address, model.Type, model.Capacity, model.PriceFrom, model.PriceTo, model.ReservationDate);
+            var clubs = await _clubService.GetFilteredClubsAsync(model.Name, model.Address, model.Type, model.Capacity, model.PriceFrom, model.PriceTo, model.ReservationDate);
 
             ViewBag.Clubs = clubs;
 
