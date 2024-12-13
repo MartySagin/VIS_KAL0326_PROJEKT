@@ -1,8 +1,9 @@
-﻿@model DataAccess.Models.Reservation
+﻿@model PayReservationViewModel
 
 @{
-    ViewData["Title"] = "Platba rezervace";
+    ViewData["Title"] = "Zaplacení Rezervace";
 }
+
 
 <h2>Platba rezervace</h2>
 
@@ -10,10 +11,14 @@
     <div class="card-header">
         Shrnutí rezervace
     </div>
+
     <div class="card-body">
-        <p><strong>Název klubu:</strong> @Model.Club.Name</p>
+        <p><strong>Název klubu:</strong> @Model.ClubName</p>
+
         <p><strong>Datum rezervace:</strong> @Model.ReservationDate.ToString("dd.MM.yyyy")</p>
+
         <p><strong>Počet osob:</strong> @Model.NumberOfPeople</p>
+
         <p><strong>Celková cena k uhrazení:</strong> @Model.Price Kč</p>
     </div>
 </div>
@@ -22,25 +27,27 @@
     <div class="card-header">
         Výběr způsobu platby
     </div>
+
     <div class="card-body">
         <form method="post" asp-controller="Reservation" asp-action="ConfirmPayment">
-            <input type="hidden" name="ReservationId" value="@Model.ReservationId" />
+            <input type="hidden" asp-for="ReservationId" />
 
             <div class="form-group">
-                <label for="paymentMethod"><strong>Způsob platby:</strong></label>
+                <label asp-for="PaymentMethod"><strong>Způsob platby:</strong></label>
                 <div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="PaymentMethod" id="paymentCard" value="Card" required />
+                        <input class="form-check-input" type="radio" asp-for="PaymentMethod" id="paymentCard" value="Card" />
 
                         <label class="form-check-label" for="paymentCard">Kartou</label>
                     </div>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="PaymentMethod" id="paymentCash" value="Cash" required />
+                        <input class="form-check-input" type="radio" asp-for="PaymentMethod" id="paymentCash" value="Cash" />
 
                         <label class="form-check-label" for="paymentCash">Hotově</label>
                     </div>
                 </div>
+                <span asp-validation-for="PaymentMethod" class="text-danger"></span>
             </div>
 
             <div class="mt-4">

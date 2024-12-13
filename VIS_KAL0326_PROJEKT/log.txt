@@ -557,3 +557,338 @@
 (13.12.2024 15:28:18) Information: Token '4t9511' authorized successfully.
 (13.12.2024 15:28:19) Information: Token '4t9511' authorized successfully.
 (13.12.2024 15:28:20) Information: Token '4t9511' authorized successfully.
+(13.12.2024 15:29:58) Information: Token '4t9511' authorized successfully.
+(13.12.2024 15:30:00) Information: Token '4t9511' authorized successfully.
+(13.12.2024 15:30:01) Information: Token '4t9511' authorized successfully.
+(13.12.2024 15:30:01) Information: Token '4t9511' authorized successfully.
+(13.12.2024 16:45:02) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 16:45:04) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 16:45:05) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 16:45:11) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 16:53:29) Information: User 'admin' authenticated successfully with token '5t8975'.
+(13.12.2024 16:53:29) Information: Token '5t8975' authorized successfully.
+(13.12.2024 16:53:31) Information: User with token '5t8975' logged out successfully.
+(13.12.2024 16:53:41) Information: User 'admin' authenticated successfully with token '5t1486'.
+(13.12.2024 16:53:41) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:43) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:45) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:45) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:48) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:49) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:50) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:50) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:50) Information: Token '5t1486' authorized successfully.
+(13.12.2024 16:53:54) Information: User with token '5t1486' logged out successfully.
+(13.12.2024 16:58:21) Information: User 'martini' registered successfully.
+(13.12.2024 16:58:27) Information: User 'martini' authenticated successfully with token '6t9804'.
+(13.12.2024 16:58:27) Information: Token '6t9804' authorized successfully.
+(13.12.2024 16:58:30) Information: User with token '6t9804' logged out successfully.
+(13.12.2024 16:59:42) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 16:59:44) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:05:09) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:06:28) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:06:47) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:06:52) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:06:55) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:06:57) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:07:00) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:07:02) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:07:05) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:12:47) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:12:51) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:12:52) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:14:44) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:21:06) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:33:30) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 17:33:35) Information: User 'admin' authenticated successfully with token '5t6017'.
+(13.12.2024 17:33:35) Information: Token '5t6017' authorized successfully.
+(13.12.2024 17:33:38) Information: Token '5t6017' authorized successfully.
+(13.12.2024 17:33:44) Information: Token '5t6017' authorized successfully.
+(13.12.2024 17:33:47) Information: Token '5t6017' authorized successfully.
+(13.12.2024 17:34:29) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:34:29) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:34:36) Information: User 'admin' authenticated successfully with token '5t8630'.
+(13.12.2024 17:34:36) Information: Token '5t8630' authorized successfully.
+(13.12.2024 17:34:37) Information: Token '5t8630' authorized successfully.
+(13.12.2024 17:34:39) Information: Token '5t8630' authorized successfully.
+(13.12.2024 17:34:40) Information: Token '5t8630' authorized successfully.
+(13.12.2024 17:35:22) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:35:22) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:35:30) Information: User 'admin' authenticated successfully with token '5t1845'.
+(13.12.2024 17:35:30) Information: Token '5t1845' authorized successfully.
+(13.12.2024 17:35:32) Information: Token '5t1845' authorized successfully.
+(13.12.2024 17:35:35) Information: Token '5t1845' authorized successfully.
+(13.12.2024 17:35:36) Information: Token '5t1845' authorized successfully.
+(13.12.2024 17:36:09) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:36:09) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:36:13) Warning: Authentication failed. Incorrect password for user 'admin'.
+(13.12.2024 17:36:16) Information: User 'admin' authenticated successfully with token '5t4646'.
+(13.12.2024 17:36:16) Information: Token '5t4646' authorized successfully.
+(13.12.2024 17:36:17) Information: Token '5t4646' authorized successfully.
+(13.12.2024 17:36:18) Information: Token '5t4646' authorized successfully.
+(13.12.2024 17:36:20) Information: Token '5t4646' authorized successfully.
+(13.12.2024 17:36:21) Information: Token '5t4646' authorized successfully.
+(13.12.2024 17:39:19) Information: Token '5t4646' authorized successfully.
+(13.12.2024 17:39:22) Information: Token '5t4646' authorized successfully.
+(13.12.2024 17:39:23) Information: Token '5t4646' authorized successfully.
+(13.12.2024 17:40:17) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:40:17) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:40:20) Information: User 'admin' authenticated successfully with token '5t1256'.
+(13.12.2024 17:40:20) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:22) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:24) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:25) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:32) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:36) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:38) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:40) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:41) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:42) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:45) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:47) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:55) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:40:58) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:41:00) Information: Token '5t1256' authorized successfully.
+(13.12.2024 17:42:05) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:42:05) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:42:09) Information: User 'admin' authenticated successfully with token '5t3372'.
+(13.12.2024 17:42:09) Information: Token '5t3372' authorized successfully.
+(13.12.2024 17:42:11) Information: Token '5t3372' authorized successfully.
+(13.12.2024 17:42:13) Information: Token '5t3372' authorized successfully.
+(13.12.2024 17:42:14) Information: Token '5t3372' authorized successfully.
+(13.12.2024 17:42:24) Information: Token '5t3372' authorized successfully.
+(13.12.2024 17:42:24) Information: Token '5t3372' authorized successfully.
+(13.12.2024 17:42:27) Information: Token '5t3372' authorized successfully.
+(13.12.2024 17:44:04) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:44:04) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:44:07) Information: User 'admin' authenticated successfully with token '5t6071'.
+(13.12.2024 17:44:07) Information: Token '5t6071' authorized successfully.
+(13.12.2024 17:44:09) Information: Token '5t6071' authorized successfully.
+(13.12.2024 17:44:12) Information: Token '5t6071' authorized successfully.
+(13.12.2024 17:44:14) Information: Token '5t6071' authorized successfully.
+(13.12.2024 17:44:43) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:44:46) Information: User 'admin' authenticated successfully with token '5t7925'.
+(13.12.2024 17:44:46) Information: Token '5t7925' authorized successfully.
+(13.12.2024 17:44:49) Information: Token '5t7925' authorized successfully.
+(13.12.2024 17:44:51) Information: Token '5t7925' authorized successfully.
+(13.12.2024 17:44:52) Information: Token '5t7925' authorized successfully.
+(13.12.2024 17:45:11) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:45:12) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:45:15) Information: User 'admin' authenticated successfully with token '5t6117'.
+(13.12.2024 17:45:15) Information: Token '5t6117' authorized successfully.
+(13.12.2024 17:45:17) Information: Token '5t6117' authorized successfully.
+(13.12.2024 17:45:19) Information: Token '5t6117' authorized successfully.
+(13.12.2024 17:45:21) Information: Token '5t6117' authorized successfully.
+(13.12.2024 17:45:53) Information: Token '5t6117' authorized successfully.
+(13.12.2024 17:45:53) Information: Token '5t6117' authorized successfully.
+(13.12.2024 17:46:08) Information: Token '5t6117' authorized successfully.
+(13.12.2024 17:53:00) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:53:01) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:53:05) Information: User 'admin' authenticated successfully with token '5t9965'.
+(13.12.2024 17:53:05) Information: Token '5t9965' authorized successfully.
+(13.12.2024 17:53:08) Information: Token '5t9965' authorized successfully.
+(13.12.2024 17:53:08) Information: Token '5t9965' authorized successfully.
+(13.12.2024 17:53:10) Information: Token '5t9965' authorized successfully.
+(13.12.2024 17:53:12) Information: Token '5t9965' authorized successfully.
+(13.12.2024 17:53:45) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:53:48) Information: User 'admin' authenticated successfully with token '5t6422'.
+(13.12.2024 17:53:48) Information: Token '5t6422' authorized successfully.
+(13.12.2024 17:53:50) Information: Token '5t6422' authorized successfully.
+(13.12.2024 17:53:52) Information: Token '5t6422' authorized successfully.
+(13.12.2024 17:53:53) Information: Token '5t6422' authorized successfully.
+(13.12.2024 17:54:19) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:54:22) Information: User 'admin' authenticated successfully with token '5t2113'.
+(13.12.2024 17:54:22) Information: Token '5t2113' authorized successfully.
+(13.12.2024 17:54:24) Information: Token '5t2113' authorized successfully.
+(13.12.2024 17:54:24) Information: Token '5t2113' authorized successfully.
+(13.12.2024 17:54:25) Information: Token '5t2113' authorized successfully.
+(13.12.2024 17:54:27) Information: Token '5t2113' authorized successfully.
+(13.12.2024 17:54:28) Information: Token '5t2113' authorized successfully.
+(13.12.2024 17:55:59) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 17:56:02) Information: User 'admin' authenticated successfully with token '5t4821'.
+(13.12.2024 17:56:02) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:05) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:07) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:08) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:10) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:10) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:21) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:21) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:28) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:29) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:44) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:45) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:46) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:47) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:49) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:53) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:54) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:59) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:56:59) Information: Token '5t4821' authorized successfully.
+(13.12.2024 17:57:08) Information: User with token '5t4821' logged out successfully.
+(13.12.2024 17:57:50) Information: User 'admin' authenticated successfully with token '5t8722'.
+(13.12.2024 17:57:50) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:57:52) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:57:54) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:57:55) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:57:59) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:57:59) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:05) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:06) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:06) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:50) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:51) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:51) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:52) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:52) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:52) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:53) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:54) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:54) Information: Token '5t8722' authorized successfully.
+(13.12.2024 17:58:57) Information: Token '5t8722' authorized successfully.
+(13.12.2024 18:01:13) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:01:15) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:01:18) Information: User 'admin' authenticated successfully with token '5t7408'.
+(13.12.2024 18:01:18) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:20) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:23) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:24) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:27) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:27) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:36) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:38) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:39) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:41) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:01:43) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:18) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:19) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:19) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:22) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:23) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:26) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:26) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:31) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:31) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:32) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:32) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:49) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:02:50) Information: Token '5t7408' authorized successfully.
+(13.12.2024 18:07:54) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:07:54) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:07:58) Information: User 'admin' authenticated successfully with token '5t3138'.
+(13.12.2024 18:07:58) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:08:00) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:08:01) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:20:55) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:20:56) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:23) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:24) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:25) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:25) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:29) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:29) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:31) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:32) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:22:33) Information: Token '5t3138' authorized successfully.
+(13.12.2024 18:42:24) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 18:42:32) Information: User 'admin' authenticated successfully with token '5t1015'.
+(13.12.2024 18:42:32) Information: Token '5t1015' authorized successfully.
+(13.12.2024 18:42:34) Information: Token '5t1015' authorized successfully.
+(13.12.2024 18:42:35) Information: Token '5t1015' authorized successfully.
+(13.12.2024 18:46:03) Information: Token '5t1015' authorized successfully.
+(13.12.2024 18:47:15) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:47:15) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:47:19) Information: User 'admin' authenticated successfully with token '5t2107'.
+(13.12.2024 18:47:19) Information: Token '5t2107' authorized successfully.
+(13.12.2024 18:47:20) Information: Token '5t2107' authorized successfully.
+(13.12.2024 18:47:23) Information: Token '5t2107' authorized successfully.
+(13.12.2024 18:48:17) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:48:17) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:48:20) Information: User 'admin' authenticated successfully with token '5t2246'.
+(13.12.2024 18:48:20) Information: Token '5t2246' authorized successfully.
+(13.12.2024 18:48:27) Information: Token '5t2246' authorized successfully.
+(13.12.2024 18:48:28) Information: Token '5t2246' authorized successfully.
+(13.12.2024 18:49:35) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:49:35) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:49:38) Information: User 'admin' authenticated successfully with token '5t8816'.
+(13.12.2024 18:49:38) Information: Token '5t8816' authorized successfully.
+(13.12.2024 18:49:40) Information: Token '5t8816' authorized successfully.
+(13.12.2024 18:49:40) Information: Token '5t8816' authorized successfully.
+(13.12.2024 18:49:43) Information: Token '5t8816' authorized successfully.
+(13.12.2024 18:49:44) Information: Token '5t8816' authorized successfully.
+(13.12.2024 18:52:25) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:52:25) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:52:28) Information: User 'admin' authenticated successfully with token '5t6647'.
+(13.12.2024 18:52:28) Information: Token '5t6647' authorized successfully.
+(13.12.2024 18:52:30) Information: Token '5t6647' authorized successfully.
+(13.12.2024 18:52:31) Information: Token '5t6647' authorized successfully.
+(13.12.2024 18:52:32) Information: Token '5t6647' authorized successfully.
+(13.12.2024 18:52:34) Information: Token '5t6647' authorized successfully.
+(13.12.2024 18:52:55) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:52:55) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:52:59) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:53:01) Information: User 'admin' authenticated successfully with token '5t5386'.
+(13.12.2024 18:53:01) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:53:04) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:53:05) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:53:08) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:53:08) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:54:13) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:54:14) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:54:15) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:54:28) Information: Token '5t5386' authorized successfully.
+(13.12.2024 18:54:32) Information: User with token '5t5386' logged out successfully.
+(13.12.2024 18:55:44) Information: User 'admin' authenticated successfully with token '5t4706'.
+(13.12.2024 18:55:44) Information: Token '5t4706' authorized successfully.
+(13.12.2024 18:55:45) Information: Token '5t4706' authorized successfully.
+(13.12.2024 18:56:49) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:56:49) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:56:52) Information: User 'admin' authenticated successfully with token '5t7781'.
+(13.12.2024 18:56:52) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:56:54) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:10) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:10) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:11) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:14) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:22) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:37) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:39) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:40) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:40) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:41) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:42) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:44) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:44) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:47) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:47) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:57:48) Information: Token '5t7781' authorized successfully.
+(13.12.2024 18:58:16) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:58:16) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:58:25) Information: User 'admin' authenticated successfully with token '5t7026'.
+(13.12.2024 18:58:25) Information: Token '5t7026' authorized successfully.
+(13.12.2024 18:58:27) Information: Token '5t7026' authorized successfully.
+(13.12.2024 18:59:16) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:59:16) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 18:59:20) Information: User 'admin' authenticated successfully with token '5t5720'.
+(13.12.2024 18:59:20) Information: Token '5t5720' authorized successfully.
+(13.12.2024 18:59:21) Information: Token '5t5720' authorized successfully.
+(13.12.2024 18:59:56) Information: Token '5t5720' authorized successfully.
+(13.12.2024 18:59:56) Information: Token '5t5720' authorized successfully.
+(13.12.2024 19:00:00) Information: Token '5t5720' authorized successfully.
+(13.12.2024 19:00:10) Information: Token '5t5720' authorized successfully.
+(13.12.2024 19:00:19) Information: Token '5t5720' authorized successfully.
+(13.12.2024 19:00:19) Information: Token '5t5720' authorized successfully.
+(13.12.2024 19:00:20) Information: Token '5t5720' authorized successfully.
+(13.12.2024 19:00:49) Information: Token '5t5720' authorized successfully.
+(13.12.2024 19:00:53) Information: Token '5t5720' authorized successfully.
+(13.12.2024 19:01:15) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:23) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:24) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:27) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:27) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:46) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:47) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:48) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:49) Warning: Authorization failed. User with ID '5' is not logged in.
+(13.12.2024 19:01:53) Information: User 'admin' authenticated successfully with token '5t7930'.
+(13.12.2024 19:01:53) Information: Token '5t7930' authorized successfully.

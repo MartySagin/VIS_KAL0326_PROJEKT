@@ -42,11 +42,16 @@ namespace VIS_KAL0326_PROJEKT.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string username, string password)
+        public IActionResult Login(LoginViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             int authToken = new Random().Next(1000, 9999);
 
-            var result = _loginService.Authenticate(username, password, authToken);
+            var result = _loginService.Authenticate(model.Username, model.Password, authToken);
 
             if (result.Status == 1)
             {
@@ -93,14 +98,19 @@ namespace VIS_KAL0326_PROJEKT.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(string email, string telephone, string username, string password)
+        public IActionResult Register(RegisterViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             var newUser = new User
             {
-                Email = email,
-                Telephone = telephone,
-                Login = username,
-                Password = password,
+                Email = model.Email,
+                Telephone = model.Telephone,
+                Login = model.Username,
+                Password = model.Password,
                 RegistrationDate = DateTime.UtcNow
             };
 

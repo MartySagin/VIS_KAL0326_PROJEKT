@@ -3,6 +3,7 @@ using DataAccess.Interfaces;
 using DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Runtime.CompilerServices;
+using VIS_KAL0326_PROJEKT.Models;
 
 namespace VIS_KAL0326_PROJEKT.Controllers
 {
@@ -29,7 +30,6 @@ namespace VIS_KAL0326_PROJEKT.Controllers
             if (!_loginService.Authorize(token))
             {
                 ViewBag.IsLoggedIn = false;
-
                 return RedirectToAction("Login", "Home");
             }
 
@@ -42,17 +42,30 @@ namespace VIS_KAL0326_PROJEKT.Controllers
                 return NotFound("Club not found.");
             }
 
-            ViewBag.ReservationDate = ReservationDate;
+            var viewModel = new ReviewReservationViewModel
+            {
+                ClubId = club.ClubId,
+                UserId = UserId,
+                ReservationDate = ReservationDate,
+                ClubName = club.Name,
+                ClubAddress = club.Address,
+                ClubType = club.Type,
+                ClubCapacity = club.Capacity,
+                ClubPricePerPerson = club.Price,
+                Price = club.Price
+            };
 
-            ViewBag.UserId = UserId;
-
-            return View(club); 
+            return View(viewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateReservation(int ClubId, int UserId, DateTime ReservationDate, int NumberOfPeople, int Price)
+        public async Task<IActionResult> CreateReservation(ReviewReservationViewModel model)
         {
-            
+            if (!ModelState.IsValid)
+            {
+                return View("ReviewReservation", model);
+            }
+
             var token = Request.Cookies["UserToken"];
 
             if (!_loginService.Authorize(token))
@@ -66,22 +79,21 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             var reservation = new Reservation
             {
-                ClubId = ClubId,
-                UserId = UserId,
-                ReservationDate = ReservationDate,
-                NumberOfPeople = NumberOfPeople,
-                Price = Price, 
-                IsConfirmed = false, 
-                State = "Pending" 
+                ClubId = model.ClubId,
+                UserId = model.UserId,
+                ReservationDate = model.ReservationDate,
+                NumberOfPeople = model.NumberOfPeople,
+                Price = model.Price,
+                IsConfirmed = false,
+                State = "Pending"
             };
 
             await _reservationRepository.AddReservationAsync(reservation);
 
-            return RedirectToAction("SearchClubs", "Club");
+            return Redirect("ListReservations");
         }
 
         [HttpGet]
-
         public async Task<IActionResult> ListReservations()
         {
             var token = Request.Cookies["UserToken"];
@@ -99,7 +111,20 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             var reservations = await _reservationRepository.GetReservationsByUserIdAsync(userId ?? -1);
 
-            return View(reservations);
+            var viewModel = new ListReservationsViewModel
+            {
+                Reservations = reservations.Select(r => new ReservationItemViewModel
+                {
+                    ReservationId = r.ReservationId,
+                    ClubName = r.Club.Name,
+                    ReservationDate = r.ReservationDate,
+                    NumberOfPeople = r.NumberOfPeople,
+                    State = r.State,
+                    Price = r.Price
+                }).ToList()
+            };
+
+            return View(viewModel);
         }
 
         [HttpPost]
@@ -110,7 +135,6 @@ namespace VIS_KAL0326_PROJEKT.Controllers
             if (!_loginService.Authorize(token))
             {
                 ViewBag.IsLoggedIn = false;
-
                 return RedirectToAction("Login", "Home");
             }
 
@@ -128,29 +152,43 @@ namespace VIS_KAL0326_PROJEKT.Controllers
                 return RedirectToAction("ListReservations");
             }
 
-            return View("PayReservation", reservation);
+            var viewModel = new PayReservationViewModel
+            {
+                ReservationId = reservation.ReservationId,
+                ClubName = reservation.Club.Name,
+                ReservationDate = reservation.ReservationDate,
+                NumberOfPeople = reservation.NumberOfPeople,
+                Price = reservation.Price
+            };
+
+            return View("PayReservation", viewModel);
         }
 
         [HttpPost]
-
-        public async Task<IActionResult> ConfirmPayment(int ReservationId)
+        public async Task<IActionResult> ConfirmPayment(PayReservationViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("PayReservation", model);
+            }
+
             var token = Request.Cookies["UserToken"];
 
             if (!_loginService.Authorize(token))
             {
-                ViewBag.IsLoggedIn = false;
-
                 return RedirectToAction("Login", "Home");
             }
 
-            ViewBag.IsLoggedIn = true;
+            var reservation = await _reservationRepository.GetReservationByIdAsync(model.ReservationId);
 
-            var reservation = await _reservationRepository.GetReservationByIdAsync(ReservationId);  
+            if (reservation == null)
+            {
+                return NotFound("Reservation not found.");
+            }
 
             reservation.State = "Paid";
 
-            _reservationRepository.UpdateReservationAsync(reservation);
+            await _reservationRepository.UpdateReservationAsync(reservation);
 
             return RedirectToAction("ListReservations");
         }

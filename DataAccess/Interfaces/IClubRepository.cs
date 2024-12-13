@@ -14,6 +14,6 @@ namespace DataAccess.Interfaces
         Task AddClubAsync(Club club);
         Task UpdateClubAsync(Club club);
         Task DeleteClubAsync(int clubId);
-        Task<IEnumerable<Club>> GetFilteredClubsAsync(string name, string address, string type, int? capacity, int? priceFrom, int? priceTo, DateTime reservationDate);
+        Task<IEnumerable<Club>> GetFilteredClubsAsync(string? name, string? address, string? type, int? capacity, int? priceFrom, int? priceTo, DateTime reservationDate);
     }
 }

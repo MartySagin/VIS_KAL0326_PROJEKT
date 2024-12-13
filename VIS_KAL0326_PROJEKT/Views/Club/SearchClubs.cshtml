@@ -4,51 +4,77 @@
     var clubs = ViewBag.Clubs as IEnumerable<DataAccess.Models.Club>;
 }
 
+@model SearchClubsViewModel
+
 <div class="container mt-5">
     <h2 class="text-center">Vyhledat Kluby</h2>
 
     <form method="post" asp-controller="Club" asp-action="SearchClubs" class="bg-light p-4 rounded shadow-sm">
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="name" class="form-label">Název</label>
-                <input type="text" id="name" name="name" class="form-control" maxlength="100" placeholder="Zadejte název klubu" />
+                <label asp-for="Name" class="form-label"></label>
+
+                <input asp-for="Name" class="form-control" placeholder="Zadejte název klubu" />
+
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="address" class="form-label">Adresa</label>
-                <input type="text" id="address" name="address" class="form-control" maxlength="100" placeholder="Zadejte adresu" />
+                <label asp-for="Address" class="form-label"></label>
+
+                <input asp-for="Address" class="form-control" placeholder="Zadejte adresu" />
+
+                <span asp-validation-for="Address" class="text-danger"></span>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="type" class="form-label">Typ</label>
-                <input type="text" id="type" name="type" class="form-control" maxlength="50" placeholder="Zadejte typ klubu" />
+                <label asp-for="Type" class="form-label"></label>
+
+                <input asp-for="Type" class="form-control" placeholder="Zadejte typ klubu" />
+
+                <span asp-validation-for="Type" class="text-danger"></span>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="capacity" class="form-label">Kapacita</label>
-                <input type="number" id="capacity" name="capacity" class="form-control" min="1" max="1000" placeholder="Minimální kapacita" />
+                <label asp-for="Capacity" class="form-label"></label>
+
+                <input asp-for="Capacity" class="form-control" placeholder="Minimální kapacita" />
+
+                <span asp-validation-for="Capacity" class="text-danger"></span>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="priceFrom" class="form-label">Cena od</label>
-                <input type="number" id="priceFrom" name="priceFrom" class="form-control" min="0" placeholder="Minimální cena" />
+                <label asp-for="PriceFrom" class="form-label"></label>
+
+                <input asp-for="PriceFrom" class="form-control" placeholder="Minimální cena" />
+
+                <span asp-validation-for="PriceFrom" class="text-danger"></span>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="priceTo" class="form-label">Cena do</label>
-                <input type="number" id="priceTo" name="priceTo" class="form-control" min="0" placeholder="Maximální cena" />
+                <label asp-for="PriceTo" class="form-label"></label>
+
+                <input asp-for="PriceTo" class="form-control" placeholder="Maximální cena" />
+
+                <span asp-validation-for="PriceTo" class="text-danger"></span>
             </div>
         </div>
 
         <div class="mb-3">
-            <label for="reservationDate" class="form-label">Datum rezervace <span class="text-danger">*</span></label>
-            <input type="date" id="reservationDate" name="reservationDate" class="form-control" required
-                   min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+            <div class="mb-3">
+                <label asp-for="ReservationDate" class="form-label"></label>
+
+                <input asp-for="ReservationDate" class="form-control"
+                       min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+
+                <span asp-validation-for="ReservationDate" class="text-danger"></span>
+            </div>
         </div>
 
         <button type="submit" class="btn btn-primary w-100">Hledat</button>
     </form>
+</div>
 
     @if (clubs != null && clubs.Any())
     {
@@ -79,8 +105,11 @@
                             {
                                 <form method="post" asp-controller="Reservation" asp-action="ReviewReservation" class="d-inline">
                                     <input type="hidden" name="ClubId" value="@club.ClubId" />
+
                                     <input type="hidden" name="UserId" value="@ViewBag.UserId" />
+
                                     <input type="hidden" name="ReservationDate" value="@Context.Request.Form["reservationDate"]" />
+
                                     <button type="submit" class="btn btn-success btn-sm">Rezervovat</button>
                                 </form>
                             }

@@ -72,7 +72,7 @@ namespace DataAccess.Repositories
             await _databaseAccess.ExecuteNonQueryAsync(sql, new { ClubId = clubId });
         }
 
-        public async Task<IEnumerable<Club>> GetFilteredClubsAsync(string name, string address, string type, int? capacity, int? priceFrom, int? priceTo, DateTime reservationDate)
+        public async Task<IEnumerable<Club>> GetFilteredClubsAsync(string? name, string? address, string? type, int? capacity, int? priceFrom, int? priceTo, DateTime reservationDate)
         {
             var sql = @"
                 SELECT DISTINCT c.*
