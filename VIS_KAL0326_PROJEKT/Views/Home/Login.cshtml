@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center">
+    <h2>Login</h2>
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <p style="color: red;">@ViewBag.ErrorMessage</p>
+    }
+
+    <form method="post" action="/Home/Login">
+        <div style="margin-bottom: 10px;">
+            <label for="username">Username</label>
+
+            <input type="text" id="username" name="username" required />
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <label for="password">Password</label>
+
+            <input type="password" id="password" name="password" required />
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+</div>

@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Vyhledat Kluby";
+
+    var clubs = ViewBag.Clubs as IEnumerable<DataAccess.Models.Club>;
+}
+
+<h2>Vyhledat Kluby</h2>
+
+<form method="post" asp-controller="Club" asp-action="Search">
+    <div class="form-group">
+        <label for="name">Název</label>
+        <input type="text" id="name" name="name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="address">Adresa</label>
+        <input type="text" id="address" name="address" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="type">Typ</label>
+        <input type="text" id="type" name="type" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="capacity">Kapacita</label>
+        <input type="number" id="capacity" name="capacity" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="priceFrom">Cena od</label>
+        <input type="number" id="priceFrom" name="priceFrom" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="priceTo">Cena do</label>
+        <input type="number" id="priceTo" name="priceTo" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="reservationDate">Datum rezervace <span class="text-danger">*</span></label>
+        <input type="date" id="reservationDate" name="reservationDate" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Hledat</button>
+</form>
+
+@if (clubs != null && clubs.Any())
+{
+    <h3 class="mt-4">Výsledky hledání (@clubs.Count())</h3>
+
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Název</th>
+                <th>Adresa</th>
+                <th>Typ</th>
+                <th>Kapacita</th>
+                <th>Cena za osobu</th>
+                <th>Rezervovat</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var club in clubs)
+            {
+                <tr>
+                    <td>@club.Name</td>
+                    <td>@club.Address</td>
+                    <td>@club.Type</td>
+                    <td>@club.Capacity 🧑</td>
+                    <td>@club.Price Kč za osobu</td>
+                    <td>
+                        @if (ViewBag.IsLoggedIn ?? false)
+                        {
+                            <form method="post" asp-controller="Reservation" asp-action="ReviewReservation">
+                                <input type="hidden" name="ClubId" value="@club.ClubId" />
+
+                                <input type="hidden" name="UserId" value="@ViewBag.UserId" />
+
+                                <input type="hidden" name="ReservationDate" value="@Context.Request.Form["reservationDate"]" />
+
+                                <button type="submit" class="btn btn-success">Rezervovat</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <span class="text-danger">Nejste přihlášen</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (clubs != null)
+{
+    <p class="mt-4">Nebyly nalezeny žádné kluby odpovídající kritériím.</p>
+}

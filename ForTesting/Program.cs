@@ -24,7 +24,7 @@ namespace ForTesting
             IUserRepository userRepository = new UserRepository(databaseAccess);
 
             // Přidání ukázkových dat
-            await AddSampleData(clubRepository, userRepository, reservationRepository);
+            //await AddSampleData(clubRepository, userRepository, reservationRepository);
 
             // Výpis rezervací
             Console.WriteLine("Listing all reservations:");

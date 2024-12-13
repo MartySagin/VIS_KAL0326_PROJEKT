@@ -27,6 +27,6 @@ namespace DataAccess.Models
         public string Services { get; set; }
 
 
-        public IEnumerable<Reservation> Reservations { get; set; }
+        public IEnumerable<Reservation> Reservations { get; set; } = new List<Reservation>();
     }
 }

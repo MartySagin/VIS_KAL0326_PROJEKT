@@ -11,8 +11,11 @@ namespace DataAccess.Interfaces
     {
         Task<IEnumerable<User>> GetAllUsersAsync();
         Task<User> GetUserByIdAsync(int userId);
-        Task AddUserAsync(User user);
-        Task UpdateUserAsync(User user);
-        Task DeleteUserAsync(int userId);
+        Task<bool> AddUserAsync(User user);
+        Task<bool> UpdateUserAsync(User user);
+        Task<bool> DeleteUserAsync(int userId);
+        Task<User?> GetUserByLoginAsync(string login);
+
+        Task<User?> GetUserByEmailAsync(string email);
     }
 }

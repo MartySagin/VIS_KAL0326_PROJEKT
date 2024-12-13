@@ -1,0 +1,286 @@
+(13.12.2024 10:40:22) Warning: Registration failed. User 'KAL0326' already exists.
+(13.12.2024 10:44:59) Warning: Registration failed. User 'KAL0326' already exists.
+(13.12.2024 10:45:12) Warning: Registration failed. User 'loginsa' already exists.
+(13.12.2024 10:46:03) Information: User 'loginsa' registered successfully.
+(13.12.2024 10:46:13) Warning: Registration failed. User 'loginsa' already exists.
+(13.12.2024 10:46:41) Warning: Registration failed. User 'loginsa' already exists.
+(13.12.2024 10:53:56) Warning: Registration failed. User 'loginsa' already exists.
+(13.12.2024 10:54:17) Information: User 'loginsa' authenticated successfully with token '4t4455'.
+(13.12.2024 10:54:17) Information: Token '4t4455' authorized successfully.
+(13.12.2024 10:54:21) Information: User with token '4t4455' logged out successfully.
+(13.12.2024 10:54:29) Information: User 'loginsa' authenticated successfully with token '4t8985'.
+(13.12.2024 10:54:29) Information: Token '4t8985' authorized successfully.
+(13.12.2024 10:54:50) Information: User with token '4t8985' logged out successfully.
+(13.12.2024 11:06:04) Warning: Authentication failed. Incorrect password for user 'loginsa'.
+(13.12.2024 11:06:22) Information: User 'loginsa' authenticated successfully with token '4t1197'.
+(13.12.2024 11:06:22) Information: Token '4t1197' authorized successfully.
+(13.12.2024 11:06:29) Information: Token '4t1197' authorized successfully.
+(13.12.2024 11:06:29) Information: Token '4t1197' authorized successfully.
+(13.12.2024 11:06:33) Information: Token '4t1197' authorized successfully.
+(13.12.2024 11:06:33) Information: Token '4t1197' authorized successfully.
+(13.12.2024 11:06:45) Information: User with token '4t1197' logged out successfully.
+(13.12.2024 11:06:50) Information: User 'loginsa' authenticated successfully with token '4t3506'.
+(13.12.2024 11:06:50) Information: Token '4t3506' authorized successfully.
+(13.12.2024 11:09:55) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:09:59) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:12) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:33) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:35) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:36) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:37) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:37) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:39) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:40) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:40) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:10:48) Information: User 'loginsa' authenticated successfully with token '4t2315'.
+(13.12.2024 11:10:48) Information: Token '4t2315' authorized successfully.
+(13.12.2024 11:10:51) Information: User with token '4t2315' logged out successfully.
+(13.12.2024 11:11:09) Information: User 'loginsa' authenticated successfully with token '4t3176'.
+(13.12.2024 11:11:09) Information: Token '4t3176' authorized successfully.
+(13.12.2024 11:11:10) Information: Token '4t3176' authorized successfully.
+(13.12.2024 11:11:10) Information: Token '4t3176' authorized successfully.
+(13.12.2024 11:11:10) Information: Token '4t3176' authorized successfully.
+(13.12.2024 11:11:10) Information: Token '4t3176' authorized successfully.
+(13.12.2024 11:11:11) Information: Token '4t3176' authorized successfully.
+(13.12.2024 11:11:11) Information: Token '4t3176' authorized successfully.
+(13.12.2024 11:11:15) Information: Token '4t3176' authorized successfully.
+(13.12.2024 11:11:23) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:11:30) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:11:32) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:11:36) Information: User 'loginsa' authenticated successfully with token '4t1109'.
+(13.12.2024 11:11:36) Information: Token '4t1109' authorized successfully.
+(13.12.2024 11:11:40) Information: Token '4t1109' authorized successfully.
+(13.12.2024 11:14:28) Information: Token '4t1109' authorized successfully.
+(13.12.2024 11:14:28) Information: Token '4t1109' authorized successfully.
+(13.12.2024 11:14:42) Information: User with token '4t1109' logged out successfully.
+(13.12.2024 11:14:57) Warning: Authentication failed. Incorrect password for user 'loginsa'.
+(13.12.2024 11:15:05) Information: User 'loginsa' authenticated successfully with token '4t5224'.
+(13.12.2024 11:15:05) Information: Token '4t5224' authorized successfully.
+(13.12.2024 11:15:13) Information: Token '4t5224' authorized successfully.
+(13.12.2024 11:25:45) Information: Token '4t5224' authorized successfully.
+(13.12.2024 11:25:47) Information: User with token '4t5224' logged out successfully.
+(13.12.2024 11:49:08) Warning: Authentication failed. Incorrect password for user 'loginsa'.
+(13.12.2024 11:49:14) Information: User 'loginsa' authenticated successfully with token '4t5740'.
+(13.12.2024 11:49:14) Information: Token '4t5740' authorized successfully.
+(13.12.2024 11:52:03) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:52:05) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:52:06) Warning: Authentication failed. Incorrect password for user 'loginsa'.
+(13.12.2024 11:52:10) Information: User 'loginsa' authenticated successfully with token '4t9191'.
+(13.12.2024 11:52:10) Information: Token '4t9191' authorized successfully.
+(13.12.2024 11:52:25) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:52:26) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:52:34) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:52:35) Information: User with token '4t9191' logged out successfully.
+(13.12.2024 11:52:40) Information: User 'loginsa' authenticated successfully with token '4t5674'.
+(13.12.2024 11:52:40) Information: Token '4t5674' authorized successfully.
+(13.12.2024 11:52:42) Information: Token '4t5674' authorized successfully.
+(13.12.2024 11:53:36) Information: Token '4t5674' authorized successfully.
+(13.12.2024 11:53:37) Information: Token '4t5674' authorized successfully.
+(13.12.2024 11:54:11) Information: User with token '4t5674' logged out successfully.
+(13.12.2024 11:54:20) Information: User 'loginsa' authenticated successfully with token '4t2006'.
+(13.12.2024 11:54:20) Information: Token '4t2006' authorized successfully.
+(13.12.2024 11:57:30) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:57:33) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 11:58:04) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 12:16:21) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 12:23:36) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:20:34) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:20:37) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:20:53) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:21:13) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:21:24) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:21:38) Information: User 'loginsa' authenticated successfully with token '4t7377'.
+(13.12.2024 13:21:38) Information: Token '4t7377' authorized successfully.
+(13.12.2024 13:21:40) Information: Token '4t7377' authorized successfully.
+(13.12.2024 13:21:43) Information: Token '4t7377' authorized successfully.
+(13.12.2024 13:21:46) Information: User with token '4t7377' logged out successfully.
+(13.12.2024 13:21:47) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:21:50) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:21:54) Information: User 'loginsa' authenticated successfully with token '4t8384'.
+(13.12.2024 13:21:54) Information: Token '4t8384' authorized successfully.
+(13.12.2024 13:21:55) Information: Token '4t8384' authorized successfully.
+(13.12.2024 13:21:57) Information: Token '4t8384' authorized successfully.
+(13.12.2024 13:29:25) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:29:26) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:29:28) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:29:33) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:29:35) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:29:38) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:29:41) Information: User with token '4t8384' logged out successfully.
+(13.12.2024 13:29:47) Information: User 'loginsa' authenticated successfully with token '4t3881'.
+(13.12.2024 13:29:47) Information: Token '4t3881' authorized successfully.
+(13.12.2024 13:29:48) Information: Token '4t3881' authorized successfully.
+(13.12.2024 13:29:51) Information: Token '4t3881' authorized successfully.
+(13.12.2024 13:30:05) Information: Token '4t3881' authorized successfully.
+(13.12.2024 13:30:10) Information: Token '4t3881' authorized successfully.
+(13.12.2024 13:30:12) Information: Token '4t3881' authorized successfully.
+(13.12.2024 13:30:12) Information: User with token '4t3881' logged out successfully.
+(13.12.2024 13:30:13) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:30:15) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:30:22) Information: User 'loginsa' authenticated successfully with token '4t9658'.
+(13.12.2024 13:30:22) Information: Token '4t9658' authorized successfully.
+(13.12.2024 13:30:23) Information: Token '4t9658' authorized successfully.
+(13.12.2024 13:30:25) Information: Token '4t9658' authorized successfully.
+(13.12.2024 13:30:30) Information: Token '4t9658' authorized successfully.
+(13.12.2024 13:30:42) Information: Token '4t9658' authorized successfully.
+(13.12.2024 13:30:44) Information: Token '4t9658' authorized successfully.
+(13.12.2024 13:30:46) Information: Token '4t9658' authorized successfully.
+(13.12.2024 13:30:51) Information: Token '4t9658' authorized successfully.
+(13.12.2024 13:30:55) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:30:57) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:31:00) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:33:02) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:33:10) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:33:16) Information: User 'loginsa' authenticated successfully with token '4t7243'.
+(13.12.2024 13:33:16) Information: Token '4t7243' authorized successfully.
+(13.12.2024 13:33:18) Information: Token '4t7243' authorized successfully.
+(13.12.2024 13:33:20) Information: Token '4t7243' authorized successfully.
+(13.12.2024 13:33:22) Information: User with token '4t7243' logged out successfully.
+(13.12.2024 13:33:23) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:33:26) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 13:33:57) Information: User 'loginsa' authenticated successfully with token '4t9708'.
+(13.12.2024 13:33:57) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:33:58) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:34:00) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:34:03) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:34:32) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:34:35) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:34:38) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:34:43) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:34:51) Information: Token '4t9708' authorized successfully.
+(13.12.2024 13:44:13) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:44:16) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:44:19) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:44:23) Information: User 'loginsa' authenticated successfully with token '4t3778'.
+(13.12.2024 13:44:23) Information: Token '4t3778' authorized successfully.
+(13.12.2024 13:44:24) Information: Token '4t3778' authorized successfully.
+(13.12.2024 13:44:26) Information: Token '4t3778' authorized successfully.
+(13.12.2024 13:45:37) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:45:40) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:46:33) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:47:39) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:47:41) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:47:43) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:47:47) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:47:57) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:47:59) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:48:00) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:48:15) Information: User 'loginsa' authenticated successfully with token '4t9339'.
+(13.12.2024 13:48:15) Information: Token '4t9339' authorized successfully.
+(13.12.2024 13:48:34) Information: Token '4t9339' authorized successfully.
+(13.12.2024 13:48:36) Information: Token '4t9339' authorized successfully.
+(13.12.2024 13:50:56) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:50:56) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:51:20) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:51:24) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:51:26) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:51:30) Information: User 'loginsa' authenticated successfully with token '4t4576'.
+(13.12.2024 13:51:30) Information: Token '4t4576' authorized successfully.
+(13.12.2024 13:51:43) Information: Token '4t4576' authorized successfully.
+(13.12.2024 13:51:47) Information: Token '4t4576' authorized successfully.
+(13.12.2024 13:51:49) Information: Token '4t4576' authorized successfully.
+(13.12.2024 13:51:52) Information: Token '4t4576' authorized successfully.
+(13.12.2024 13:51:56) Information: Token '4t4576' authorized successfully.
+(13.12.2024 13:52:39) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:52:39) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:52:41) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:52:42) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:52:44) Information: User 'loginsa' authenticated successfully with token '4t1170'.
+(13.12.2024 13:52:44) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:52:45) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:52:47) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:52:48) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:52:53) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:52:56) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:52:57) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:53:12) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:53:49) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:53:53) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:53:54) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:54:33) Information: Token '4t1170' authorized successfully.
+(13.12.2024 13:55:14) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:55:17) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:55:21) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:55:22) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:55:23) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:55:26) Information: User 'loginsa' authenticated successfully with token '4t7774'.
+(13.12.2024 13:55:26) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:28) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:34) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:35) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:39) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:42) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:43) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:47) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:49) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:51) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:53) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:55:56) Information: Token '4t7774' authorized successfully.
+(13.12.2024 13:58:26) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:58:26) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 13:58:32) Information: User 'loginsa' authenticated successfully with token '4t6989'.
+(13.12.2024 13:58:32) Information: Token '4t6989' authorized successfully.
+(13.12.2024 13:58:33) Information: Token '4t6989' authorized successfully.
+(13.12.2024 13:58:35) Information: Token '4t6989' authorized successfully.
+(13.12.2024 13:58:36) Information: Token '4t6989' authorized successfully.
+(13.12.2024 14:00:34) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:00:34) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:00:42) Information: User 'loginsa' authenticated successfully with token '4t4184'.
+(13.12.2024 14:00:42) Information: Token '4t4184' authorized successfully.
+(13.12.2024 14:00:43) Information: Token '4t4184' authorized successfully.
+(13.12.2024 14:00:47) Information: Token '4t4184' authorized successfully.
+(13.12.2024 14:00:49) Information: Token '4t4184' authorized successfully.
+(13.12.2024 14:01:50) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:01:50) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:01:52) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:01:52) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:01:53) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:01:54) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:01:59) Information: User 'loginsa' authenticated successfully with token '4t1577'.
+(13.12.2024 14:01:59) Information: Token '4t1577' authorized successfully.
+(13.12.2024 14:02:00) Information: User with token '4t1577' logged out successfully.
+(13.12.2024 14:02:04) Information: User 'loginsa' authenticated successfully with token '4t7281'.
+(13.12.2024 14:02:04) Information: Token '4t7281' authorized successfully.
+(13.12.2024 14:02:05) Information: Token '4t7281' authorized successfully.
+(13.12.2024 14:02:06) Information: Token '4t7281' authorized successfully.
+(13.12.2024 14:02:07) Information: Token '4t7281' authorized successfully.
+(13.12.2024 14:02:28) Information: User with token '4t7281' logged out successfully.
+(13.12.2024 14:02:40) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 14:02:46) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 14:02:48) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 14:02:52) Information: User 'loginsa' authenticated successfully with token '4t5144'.
+(13.12.2024 14:02:52) Information: Token '4t5144' authorized successfully.
+(13.12.2024 14:02:53) Information: Token '4t5144' authorized successfully.
+(13.12.2024 14:02:56) Information: Token '4t5144' authorized successfully.
+(13.12.2024 14:02:57) Information: Token '4t5144' authorized successfully.
+(13.12.2024 14:05:43) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:05:43) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:05:46) Warning: Authentication failed. Incorrect password for user 'loginsa'.
+(13.12.2024 14:05:50) Information: User 'loginsa' authenticated successfully with token '4t9136'.
+(13.12.2024 14:05:50) Information: Token '4t9136' authorized successfully.
+(13.12.2024 14:05:51) Information: Token '4t9136' authorized successfully.
+(13.12.2024 14:05:53) Information: Token '4t9136' authorized successfully.
+(13.12.2024 14:05:54) Information: Token '4t9136' authorized successfully.
+(13.12.2024 14:09:57) Information: Token '4t9136' authorized successfully.
+(13.12.2024 14:10:05) Information: Token '4t9136' authorized successfully.
+(13.12.2024 14:14:07) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:14:07) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:14:12) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:14:16) Information: User 'loginsa' authenticated successfully with token '4t2103'.
+(13.12.2024 14:14:16) Information: Token '4t2103' authorized successfully.
+(13.12.2024 14:14:17) Information: Token '4t2103' authorized successfully.
+(13.12.2024 14:14:19) Information: Token '4t2103' authorized successfully.
+(13.12.2024 14:14:20) Information: Token '4t2103' authorized successfully.
+(13.12.2024 14:14:29) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:14:29) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:14:30) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:14:33) Information: User 'loginsa' authenticated successfully with token '4t7085'.
+(13.12.2024 14:14:33) Information: Token '4t7085' authorized successfully.
+(13.12.2024 14:14:33) Information: Token '4t7085' authorized successfully.
+(13.12.2024 14:14:35) Information: Token '4t7085' authorized successfully.
+(13.12.2024 14:14:42) Information: Token '4t7085' authorized successfully.
+(13.12.2024 14:20:35) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:20:42) Warning: Authorization failed. User with ID '4' is not logged in.
+(13.12.2024 14:20:45) Information: User 'loginsa' authenticated successfully with token '4t3186'.
+(13.12.2024 14:20:45) Information: Token '4t3186' authorized successfully.
+(13.12.2024 14:20:46) Information: Token '4t3186' authorized successfully.

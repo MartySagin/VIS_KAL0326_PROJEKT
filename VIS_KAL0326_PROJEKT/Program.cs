@@ -1,3 +1,9 @@
+using DataAccess.Interfaces;
+using DataAccess.Repositories;
+using DataAccess;
+using Application.Interfaces;
+using Application.BusinessLogic;
+
 namespace VIS_KAL0326_PROJEKT
 {
     public class Program
@@ -6,8 +12,22 @@ namespace VIS_KAL0326_PROJEKT
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+            // Singletons
+            builder.Services.AddSingleton<IDatabaseAccess>(new DatabaseAccess(connectionString));
+            builder.Services.AddSingleton<ILoginCacheService>(new LoginCacheService(TimeSpan.FromMinutes(30)));
+            builder.Services.AddSingleton<IMyLogger, MyLogger>();
+
+            // Repositories
+            builder.Services.AddTransient<IUserRepository, UserRepository>();
+            builder.Services.AddTransient<IReservationRepository, ReservationRepository>();
+            builder.Services.AddTransient<IClubRepository, ClubRepository>();
+
+            // Services
+            builder.Services.AddTransient<ILoginService, LoginService>();
 
             var app = builder.Build();
 

@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIS_KAL0326_PROJEKT", "VIS_KAL0326_PROJEKT\VIS_KAL0326_PROJEKT.csproj", "{D33EF048-17D9-4185-9613-295471C97634}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VIS_KAL0326_PROJEKT", "VIS_KAL0326_PROJEKT\VIS_KAL0326_PROJEKT.csproj", "{D33EF048-17D9-4185-9613-295471C97634}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{949AE3B5-213C-44A7-844F-EDDB06245837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{949AE3B5-213C-44A7-844F-EDDB06245837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForTesting", "ForTesting\ForTesting.csproj", "{8B6521E8-6F6C-431A-8403-B8BA136044D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForTesting", "ForTesting\ForTesting.csproj", "{8B6521E8-6F6C-431A-8403-B8BA136044D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{1B2DED7B-B389-40EE-A152-191EDF7B5A09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8B6521E8-6F6C-431A-8403-B8BA136044D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B6521E8-6F6C-431A-8403-B8BA136044D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B6521E8-6F6C-431A-8403-B8BA136044D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2DED7B-B389-40EE-A152-191EDF7B5A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2DED7B-B389-40EE-A152-191EDF7B5A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2DED7B-B389-40EE-A152-191EDF7B5A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2DED7B-B389-40EE-A152-191EDF7B5A09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
