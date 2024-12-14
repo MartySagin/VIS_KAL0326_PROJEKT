@@ -18,7 +18,9 @@ namespace Application.BusinessLogic
         public LoginService(IUserRepository userRepository, ILoginCacheService loginCacheService, IMyLogger customLogger)
         {
             _userRepository = userRepository;
+
             _loginCacheService = loginCacheService;
+
             _myLogger = customLogger;
         }
 

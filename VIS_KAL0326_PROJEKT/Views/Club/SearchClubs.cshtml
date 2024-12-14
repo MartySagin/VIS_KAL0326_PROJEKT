@@ -10,6 +10,12 @@
     <h2 class="text-center">Vyhledat Kluby</h2>
 
     <form method="post" asp-controller="Club" asp-action="SearchClubs" class="bg-light p-4 rounded shadow-sm">
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger text-center" role="alert">
+                @ViewBag.ErrorMessage
+            </div>
+        }
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label asp-for="Name" class="form-label"></label>

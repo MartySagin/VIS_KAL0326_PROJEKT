@@ -1,6 +1,8 @@
 ﻿using Application.Interfaces;
 using DataAccess.Interfaces;
+using DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq.Expressions;
 using System.Reflection.Emit;
 using VIS_KAL0326_PROJEKT.Models;
 
@@ -9,14 +11,12 @@ namespace VIS_KAL0326_PROJEKT.Controllers
     public class ClubController : Controller
     {
         private readonly IClubService _clubService;
-        private readonly IReservationRepository _reservationRepository;
+
         private readonly ILoginService _loginService;
 
-        public ClubController(IClubService clubService, IReservationRepository reservationRepository, ILoginService loginService)
+        public ClubController(IClubService clubService, ILoginService loginService)
         {
             _clubService = clubService;
-
-            _reservationRepository = reservationRepository;
 
             _loginService = loginService;
         }
@@ -37,7 +37,17 @@ namespace VIS_KAL0326_PROJEKT.Controllers
                 return View(model);
             }
 
-            var clubs = await _clubService.GetFilteredClubsAsync(model.Name, model.Address, model.Type, model.Capacity, model.PriceFrom, model.PriceTo, model.ReservationDate);
+            IEnumerable<Club> clubs;
+
+            try { 
+                clubs = await _clubService.GetFilteredClubsAsync(model.Name, model.Address, model.Type, model.Capacity, model.PriceFrom, model.PriceTo, model.ReservationDate);
+            }
+            catch (Exception e)
+            {
+                ViewBag.ErrorMessage = e.Message;
+
+                return View(model);
+            }
 
             ViewBag.Clubs = clubs;
 
@@ -47,7 +57,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             ViewBag.UserId = !string.IsNullOrEmpty(token) ? _loginService.ExtractUserIdFromToken(token) : null;
 
-            return View();
+            return View(model);
         }
     }
 }

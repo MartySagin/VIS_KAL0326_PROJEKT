@@ -13,9 +13,13 @@ namespace DataAccess.Repositories
     {
         private readonly IDatabaseAccess _databaseAccess;
 
-        public ClubRepository(IDatabaseAccess databaseAccess)
+        private readonly IMyLogger _myLogger;
+
+        public ClubRepository(IDatabaseAccess databaseAccess, IMyLogger myLogger)
         {
             _databaseAccess = databaseAccess;
+
+            _myLogger = myLogger;
         }
 
         public async Task<IEnumerable<Club>> GetAllClubsAsync()
@@ -33,6 +37,8 @@ namespace DataAccess.Repositories
                 club.Reservations = reservations.Where(r => r.ClubId == club.ClubId).ToList();
             }
 
+            _myLogger.Information("Executing GetAllClubsAsync method");
+
             return clubs;
         }
 
@@ -42,6 +48,8 @@ namespace DataAccess.Repositories
 
             var clubs = await _databaseAccess.ExecuteQueryAsync<Club>(sql, new { ClubId = clubId });
 
+            _myLogger.Information("Executing GetClubByIdAsync method");
+
             return clubs.FirstOrDefault();
         }
 
@@ -50,6 +58,8 @@ namespace DataAccess.Repositories
             var sql = @"
                 INSERT INTO Clubs (Name, Address, Description, Type, Capacity, Price, Image, Services)
                 VALUES (@Name, @Address, @Description, @Type, @Capacity, @Price, @Image, @Services)";
+
+            _myLogger.Information("Executing AddClubAsync method");
 
             await _databaseAccess.ExecuteNonQueryAsync(sql, club);
         }
@@ -62,6 +72,8 @@ namespace DataAccess.Repositories
                     Capacity = @Capacity, Price = @Price, Image = @Image, Services = @Services
                 WHERE ClubId = @ClubId";
 
+            _myLogger.Information("Executing UpdateClubAsync method");
+
             await _databaseAccess.ExecuteNonQueryAsync(sql, club);
         }
 
@@ -69,10 +81,12 @@ namespace DataAccess.Repositories
         {
             var sql = "DELETE FROM Clubs WHERE ClubId = @ClubId";
 
+            _myLogger.Information("Executing DeleteClubAsync method");
+
             await _databaseAccess.ExecuteNonQueryAsync(sql, new { ClubId = clubId });
         }
 
-        public async Task<IEnumerable<Club>> GetFilteredClubsAsync(string? name, string? address, string? type, int? capacity, int? priceFrom, int? priceTo, DateTime reservationDate)
+        public async Task<IEnumerable<Club>> GetFilteredClubsAsync(string? name, string? address, string? type, int? capacity, int? priceFrom, int? priceTo, string reservationDate)
         {
             var sql = @"
                 SELECT DISTINCT c.*
@@ -88,6 +102,8 @@ namespace DataAccess.Repositories
                     (@PriceTo IS NULL OR c.Price <= @PriceTo) AND
                     (r.ReservationId IS NULL OR DATE(r.ReservationDate) != DATE(@ReservationDate));";
 
+            _myLogger.Information("Executing GetFilteredClubsAsync method");
+
             return await _databaseAccess.ExecuteQueryAsync<Club>(sql, new
             {
                 Name = name,
@@ -96,7 +112,7 @@ namespace DataAccess.Repositories
                 Capacity = capacity,
                 PriceFrom = priceFrom,
                 PriceTo = priceTo,
-                ReservationDate = reservationDate.ToString("yyyy-MM-dd")
+                ReservationDate = reservationDate
             });
         }
     }

@@ -9,9 +9,13 @@ namespace DataAccess.Repositories
     {
         private readonly IDatabaseAccess _databaseAccess;
 
-        public ReservationRepository(IDatabaseAccess databaseAccess)
+        private readonly IMyLogger _myLogger;
+
+        public ReservationRepository(IDatabaseAccess databaseAccess, IMyLogger myLogger)
         {
             _databaseAccess = databaseAccess;
+
+            _myLogger = myLogger;
         }
 
         public async Task<IEnumerable<Reservation>> GetAllReservationsAsync()
@@ -23,6 +27,8 @@ namespace DataAccess.Repositories
                 FROM Reservations r
                 JOIN Clubs c ON r.ClubId = c.ClubId
                 JOIN Users u ON r.UserId = u.UserId";
+
+            _myLogger.Information("Executing GetAllReservationsAsync method");
 
             return await _databaseAccess.ExecuteQueryAsync<Reservation>(sql);
         }
@@ -40,6 +46,8 @@ namespace DataAccess.Repositories
             {
                 reservation.Club = _databaseAccess.ExecuteQueryAsync<Club>("SELECT * FROM Clubs WHERE ClubId = @ClubId", new { ClubId = reservation.ClubId }).Result.FirstOrDefault() ?? new Club();
             }
+
+            _myLogger.Information("Executing GetReservationByIdAsync method");
 
             return reservations.FirstOrDefault();
         }
@@ -59,6 +67,8 @@ namespace DataAccess.Repositories
                 reservation.Club = _databaseAccess.ExecuteQueryAsync<Club>("SELECT * FROM Clubs WHERE ClubId = @ClubId", new { ClubId = reservation.ClubId }).Result.FirstOrDefault() ?? new Club();
             }
 
+            _myLogger.Information("Executing GetReservationsByUserIdAsync method");
+
             return reservations;
         }
 
@@ -67,6 +77,8 @@ namespace DataAccess.Repositories
             var sql = @"
                 INSERT INTO Reservations (ReservationDate, NumberOfPeople, IsConfirmed, State, Price, ClubId, UserId)
                 VALUES (@ReservationDate, @NumberOfPeople, @IsConfirmed, @State, @Price, @ClubId, @UserId)";
+
+            _myLogger.Information("Executing AddReservationAsync method");
 
             await _databaseAccess.ExecuteNonQueryAsync(sql, reservation);
         }
@@ -80,12 +92,16 @@ namespace DataAccess.Repositories
                     ClubId = @ClubId, UserId = @UserId
                 WHERE ReservationId = @ReservationId";
 
+            _myLogger.Information("Executing UpdateReservationAsync method");
+
             await _databaseAccess.ExecuteNonQueryAsync(sql, reservation);
         }
 
         public async Task DeleteReservationAsync(int reservationId)
         {
             var sql = "DELETE FROM Reservations WHERE ReservationId = @ReservationId";
+
+            _myLogger.Information("Executing DeleteReservationAsync method");
 
             await _databaseAccess.ExecuteNonQueryAsync(sql, new { ReservationId = reservationId });
         }

@@ -919,3 +919,214 @@
 (13.12.2024 19:24:13) Information: Token '5t5566' authorized successfully.
 (13.12.2024 19:24:14) Information: Token '5t5566' authorized successfully.
 (13.12.2024 19:24:16) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:52:41) Information: Token '5t5566' authorized successfully.
+(13.12.2024 19:52:51) Warning: Authorization failed. Token is null or empty.
+(13.12.2024 19:52:55) Information: User 'admin' authenticated successfully with token '5t5014'.
+(13.12.2024 19:52:55) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:52:57) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:52:58) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:03) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:08) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:16) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:38) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:38) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:43) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:43) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:44) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:44) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:46) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:48) Information: Token '5t5014' authorized successfully.
+(13.12.2024 19:53:50) Information: User with token '5t5014' logged out successfully.
+(13.12.2024 19:53:56) Information: User 'admin' authenticated successfully with token '5t2942'.
+(13.12.2024 19:53:56) Information: Token '5t2942' authorized successfully.
+(13.12.2024 19:53:58) Information: Token '5t2942' authorized successfully.
+(13.12.2024 19:54:00) Information: Token '5t2942' authorized successfully.
+(13.12.2024 19:56:11) Information: Token '5t2942' authorized successfully.
+(14.12.2024 11:00:04) Information: User 'admin' authenticated successfully with token '5t6260'.
+(14.12.2024 11:00:04) Information: Token '5t6260' authorized successfully.
+(14.12.2024 11:00:06) Information: Token '5t6260' authorized successfully.
+(14.12.2024 11:00:08) Information: Token '5t6260' authorized successfully.
+(14.12.2024 11:00:10) Information: Token '5t6260' authorized successfully.
+(14.12.2024 11:00:10) Information: Token '5t6260' authorized successfully.
+(14.12.2024 11:09:09) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:09) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:25) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:25) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:28) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:33) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:39) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:39) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:43) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:43) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:44) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:44) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:46) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:46) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:47) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:47) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:49) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:49) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:51) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:51) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:09:53) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:09:53) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:10:01) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:10:04) Information: Executing GetUserByLoginAsync method
+(14.12.2024 11:10:04) Information: User 'admin' authenticated successfully with token '5t8549'.
+(14.12.2024 11:10:04) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:07) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:12) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:10:12) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:24) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:10:24) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:26) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:10:26) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:29) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:10:29) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:29) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:10:29) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:32) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:10:32) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:43) Information: Token '5t8549' authorized successfully.
+(14.12.2024 11:10:43) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:15:17) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:15:17) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:15:22) Information: Executing GetUserByLoginAsync method
+(14.12.2024 11:15:22) Information: User 'admin' authenticated successfully with token '5t4624'.
+(14.12.2024 11:15:22) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:15:40) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:15:44) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:15:44) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:15:47) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:15:47) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:15:53) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:15:53) Information: Executing GetClubByIdAsync method
+(14.12.2024 11:16:00) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:00) Information: Executing AddReservationAsync method
+(14.12.2024 11:16:00) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:00) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:16:10) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:10) Information: Executing DeleteReservationAsync method
+(14.12.2024 11:16:10) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:10) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:16:12) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:12) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:16:14) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:14) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:16:15) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:16) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:16) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:16) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:16:33) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:33) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:16:39) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:39) Information: Executing GetReservationByIdAsync method
+(14.12.2024 11:16:52) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:52) Information: Executing GetReservationByIdAsync method
+(14.12.2024 11:16:52) Information: Executing UpdateReservationAsync method
+(14.12.2024 11:16:52) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:16:52) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:17:35) Information: Token '5t4624' authorized successfully.
+(14.12.2024 11:18:46) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:18:51) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:18:55) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:18:57) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:18:58) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:18:59) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:19:03) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:19:03) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:19:10) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:19:12) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:19:17) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:23:50) Information: Executing GetUserByLoginAsync method
+(14.12.2024 11:23:50) Information: Executing GetUserByEmailAsync method
+(14.12.2024 11:23:50) Warning: Registration failed. Email 'kalus.mar@seznam.cz' is already registered.
+(14.12.2024 11:24:17) Information: Executing GetUserByLoginAsync method
+(14.12.2024 11:24:17) Information: Executing GetUserByEmailAsync method
+(14.12.2024 11:24:17) Information: Executing AddUserAsync method
+(14.12.2024 11:24:17) Information: User 'MartiniLos' registered successfully.
+(14.12.2024 11:24:17) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:25:27) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:25:28) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:25:47) Information: Executing GetUserByLoginAsync method
+(14.12.2024 11:25:47) Information: Executing GetUserByEmailAsync method
+(14.12.2024 11:25:47) Information: Executing AddUserAsync method
+(14.12.2024 11:25:47) Information: User 'Loupakos' registered successfully.
+(14.12.2024 11:25:47) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:26:23) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:26:25) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:26:29) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:26:29) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:27:56) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:27:56) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:28:12) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:28:12) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:28:55) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:28:59) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:28:59) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:29:00) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:29:00) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:32:26) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:32:27) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:32:29) Warning: Authorization failed. User with ID '5' is not logged in.
+(14.12.2024 11:32:30) Information: Executing GetUserByLoginAsync method
+(14.12.2024 11:32:30) Information: User 'admin' authenticated successfully with token '5t9653'.
+(14.12.2024 11:32:30) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:32:32) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:32:34) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:32:34) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:32:36) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:32:36) Information: Executing GetClubByIdAsync method
+(14.12.2024 11:32:39) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:32:39) Information: Executing AddReservationAsync method
+(14.12.2024 11:32:39) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:32:39) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:33:08) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:33:08) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:33:09) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:33:10) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:33:10) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:33:11) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:34:20) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:34:30) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:34:30) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:34:37) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:34:37) Information: Token '5t9653' authorized successfully.
+(14.12.2024 11:34:39) Information: User with token '5t9653' logged out successfully.
+(14.12.2024 11:34:48) Information: Executing GetUserByLoginAsync method
+(14.12.2024 11:34:48) Information: User 'admin' authenticated successfully with token '5t5481'.
+(14.12.2024 11:34:48) Information: Token '5t5481' authorized successfully.
+(14.12.2024 11:34:49) Information: Token '5t5481' authorized successfully.
+(14.12.2024 11:34:49) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:34:50) Information: User with token '5t5481' logged out successfully.
+(14.12.2024 11:34:52) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 11:35:05) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 11:35:54) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 11:36:29) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 11:40:05) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 11:46:09) Information: Executing GetUserByLoginAsync method
+(14.12.2024 11:46:09) Information: User 'admin' authenticated successfully with token '5t5590'.
+(14.12.2024 11:46:09) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:11) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:14) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:46:14) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:16) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:16) Information: Executing GetClubByIdAsync method
+(14.12.2024 11:46:21) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:21) Information: Executing AddReservationAsync method
+(14.12.2024 11:46:21) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:21) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:46:45) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:45) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:46:48) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:48) Information: Executing GetReservationByIdAsync method
+(14.12.2024 11:46:53) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:53) Information: Executing GetReservationByIdAsync method
+(14.12.2024 11:46:53) Information: Executing UpdateReservationAsync method
+(14.12.2024 11:46:53) Information: Token '5t5590' authorized successfully.
+(14.12.2024 11:46:53) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 11:46:59) Information: User with token '5t5590' logged out successfully.
+(14.12.2024 11:47:02) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 11:47:13) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 11:47:16) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 11:47:16) Warning: Authorization failed. Token is null or empty.

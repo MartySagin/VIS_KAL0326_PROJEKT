@@ -10,7 +10,7 @@ namespace VIS_KAL0326_PROJEKT.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Telefon je povinný.")]
-        [RegularExpression(@"^\+?\d{9}$", ErrorMessage = "Telefonní číslo musí obsahovat 9 číslic.")]
+        [RegularExpression(@"^\+?\d{9}$", ErrorMessage = "Telefonní číslo musí obsahovat 9 číslic a nesmí obsahovat mezery.")]
         public string Telephone { get; set; }
 
         [Required(ErrorMessage = "Uživatelské jméno je povinné.")]

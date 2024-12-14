@@ -13,14 +13,20 @@ namespace DataAccess.Repositories
     {
         private readonly IDatabaseAccess _databaseAccess;
 
-        public UserRepository(IDatabaseAccess databaseAccess)
+        private readonly IMyLogger _myLogger;
+
+        public UserRepository(IDatabaseAccess databaseAccess, IMyLogger myLogger)
         {
             _databaseAccess = databaseAccess;
+
+            _myLogger = myLogger;
         }
 
         public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
             var sql = "SELECT * FROM Users";
+
+            _myLogger.Information("Executing GetAllUsersAsync method");
 
             return await _databaseAccess.ExecuteQueryAsync<User>(sql);
         }
@@ -30,6 +36,8 @@ namespace DataAccess.Repositories
             var sql = "SELECT * FROM Users WHERE UserId = @UserId";
 
             var users = await _databaseAccess.ExecuteQueryAsync<User>(sql, new { UserId = userId });
+
+            _myLogger.Information("Executing GetUserByIdAsync method");
 
             return users.FirstOrDefault();
         }
@@ -41,6 +49,8 @@ namespace DataAccess.Repositories
                 VALUES (@Email, @Telephone, @Login, @Password, @RegistrationDate)";
 
             await _databaseAccess.ExecuteNonQueryAsync(sql, user);
+
+            _myLogger.Information("Executing AddUserAsync method");
 
             return true;
         }
@@ -55,6 +65,8 @@ namespace DataAccess.Repositories
 
             await _databaseAccess.ExecuteNonQueryAsync(sql, user);
 
+            _myLogger.Information("Executing UpdateUserAsync method");
+
             return true;
         }
 
@@ -63,6 +75,8 @@ namespace DataAccess.Repositories
             var sql = "DELETE FROM Users WHERE UserId = @UserId";
 
             await _databaseAccess.ExecuteNonQueryAsync(sql, new { UserId = userId });
+
+            _myLogger.Information("Executing DeleteUserAsync method");
 
             return true;
         }
@@ -73,6 +87,8 @@ namespace DataAccess.Repositories
 
             var users = await _databaseAccess.ExecuteQueryAsync<User>(sql, new { Login = login });
 
+            _myLogger.Information("Executing GetUserByLoginAsync method");
+
             return users.FirstOrDefault();
         }
 
@@ -81,6 +97,8 @@ namespace DataAccess.Repositories
             var sql = "SELECT * FROM Users WHERE Email = @Email";
 
             var users = await _databaseAccess.ExecuteQueryAsync<User>(sql, new { Email = email });
+
+            _myLogger.Information("Executing GetUserByEmailAsync method");
 
             return users.FirstOrDefault();
         }

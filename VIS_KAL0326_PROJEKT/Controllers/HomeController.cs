@@ -65,7 +65,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.ErrorMessage = "Invalid username or password.";
+            ViewBag.ErrorMessage = "Špatnì zadané uživatelské jméno nebo heslo.";
 
             return View();
         }
@@ -116,12 +116,10 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             if (_loginService.Register(newUser))
             {
-                ViewBag.Message = "Registration successful. You can now log in.";
-
                 return RedirectToAction("Login");
             }
 
-            ViewBag.ErrorMessage = "Registration failed. Username or email may already exist.";
+            ViewBag.ErrorMessage = "Registrace selhala. Uživatelské jméno nebo email je již použito.";
 
             return View();
         }

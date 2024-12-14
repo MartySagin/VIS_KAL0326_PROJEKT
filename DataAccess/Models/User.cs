@@ -14,7 +14,6 @@
 
         public DateTime RegistrationDate { get; set; }
 
-
         public IEnumerable<Reservation> Reservations { get; set; }
     }
 }

@@ -10,7 +10,9 @@ namespace VIS_KAL0326_PROJEKT.Controllers
     public class ReservationController : Controller
     {
         private readonly IClubService _clubService;
+
         private readonly IReservationService _reservationService;
+
         private readonly ILoginService _loginService;
 
         public ReservationController(IClubService clubService, IReservationService reservationService, ILoginService loginService)
@@ -22,6 +24,13 @@ namespace VIS_KAL0326_PROJEKT.Controllers
             _loginService = loginService;
         }
 
+        [HttpGet]
+
+        public IActionResult ReviewReservation()
+        {
+            return RedirectToAction("Login", "Home");
+        }
+
         [HttpPost]
         public async Task<IActionResult> ReviewReservation(int ClubId, int UserId, DateTime ReservationDate)
         {
@@ -30,6 +39,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
             if (!_loginService.Authorize(token))
             {
                 ViewBag.IsLoggedIn = false;
+
                 return RedirectToAction("Login", "Home");
             }
 
@@ -39,7 +49,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             if (club == null)
             {
-                return NotFound("Club not found.");
+                return NotFound("Klub nebyl nalezen.");
             }
 
             var viewModel = new ReviewReservationViewModel
@@ -109,7 +119,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             var userId = _loginService.ExtractUserIdFromToken(token);
 
-            var reservations = await _reservationRepository.GetReservationsByUserIdAsync(userId ?? -1);
+            var reservations = await _reservationService.GetReservationsByUserIdAsync(userId ?? -1);
 
             var viewModel = new ListReservationsViewModel
             {
@@ -127,6 +137,12 @@ namespace VIS_KAL0326_PROJEKT.Controllers
             return View(viewModel);
         }
 
+        [HttpGet]
+        public IActionResult PayReservation()
+        {
+            return RedirectToAction("Login", "Home");
+        }
+
         [HttpPost]
         public async Task<IActionResult> PayReservation(int ReservationId)
         {
@@ -135,16 +151,17 @@ namespace VIS_KAL0326_PROJEKT.Controllers
             if (!_loginService.Authorize(token))
             {
                 ViewBag.IsLoggedIn = false;
+
                 return RedirectToAction("Login", "Home");
             }
 
             ViewBag.IsLoggedIn = true;
 
-            var reservation = await _reservationRepository.GetReservationByIdAsync(ReservationId);
+            var reservation = await _reservationService.GetReservationByIdAsync(ReservationId);
 
             if (reservation == null)
             {
-                return NotFound("Reservation not found.");
+                return NotFound("Rezervace nebyla nalezena.");
             }
 
             if (reservation.State != "Confirmed")
@@ -179,16 +196,16 @@ namespace VIS_KAL0326_PROJEKT.Controllers
                 return RedirectToAction("Login", "Home");
             }
 
-            var reservation = await _reservationRepository.GetReservationByIdAsync(model.ReservationId);
+            var reservation = await _reservationService.GetReservationByIdAsync(model.ReservationId);
 
             if (reservation == null)
             {
-                return NotFound("Reservation not found.");
+                return NotFound("Rezervace nebyla nalezena.");
             }
 
             reservation.State = "Paid";
 
-            await _reservationRepository.UpdateReservationAsync(reservation);
+            await _reservationService.UpdateReservationAsync(reservation);
 
             return RedirectToAction("ListReservations");
         }
@@ -208,7 +225,7 @@ namespace VIS_KAL0326_PROJEKT.Controllers
 
             ViewBag.IsLoggedIn = true;
 
-            await _reservationRepository.DeleteReservationAsync(ReservationId);
+            await _reservationService.DeleteReservationAsync(ReservationId);
 
             return RedirectToAction("ListReservations");
         }

@@ -10,5 +10,13 @@ namespace Application.Interfaces
     public interface IReservationService
     {
         Task AddReservationAsync(Reservation reservation);
+
+        Task DeleteReservationAsync(int reservationId);
+
+        Task<Reservation> GetReservationByIdAsync(int reservationId);
+
+        Task<IEnumerable<Reservation>> GetReservationsByUserIdAsync(int userId);
+
+        Task UpdateReservationAsync(Reservation reservation);
     }
 }

@@ -29,6 +29,7 @@ namespace VIS_KAL0326_PROJEKT
             // Services
             builder.Services.AddTransient<ILoginService, LoginService>();
             builder.Services.AddTransient<IClubService, ClubService>();
+            builder.Services.AddTransient<IReservationService, ReservationService>();
 
             var app = builder.Build();
 
