@@ -38,17 +38,9 @@ namespace VIS_KAL0326_PROJEKT.Controllers
             }
 
             IEnumerable<Club> clubs;
-
-            try { 
-                clubs = await _clubService.GetFilteredClubsAsync(model.Name, model.Address, model.Type, model.Capacity, model.PriceFrom, model.PriceTo, model.ReservationDate);
-            }
-            catch (Exception e)
-            {
-                ViewBag.ErrorMessage = e.Message;
-
-                return View(model);
-            }
-
+      
+            clubs = await _clubService.GetFilteredClubsAsync(model.Name, model.Address, model.Type, model.Capacity, model.PriceFrom, model.PriceTo, model.ReservationDate);
+            
             ViewBag.Clubs = clubs;
 
             var token = Request.Cookies["UserToken"];

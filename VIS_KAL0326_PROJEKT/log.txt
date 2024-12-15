@@ -1130,3 +1130,65 @@
 (14.12.2024 11:47:13) Warning: Authorization failed. Token is null or empty.
 (14.12.2024 11:47:16) Information: Executing GetFilteredClubsAsync method
 (14.12.2024 11:47:16) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 16:30:58) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 16:31:01) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 16:31:02) Warning: Authorization failed. Token is null or empty.
+(14.12.2024 16:31:08) Information: Executing GetUserByLoginAsync method
+(14.12.2024 16:31:08) Information: User 'admin' authenticated successfully with token '5t8068'.
+(14.12.2024 16:31:08) Information: Token '5t8068' authorized successfully.
+(14.12.2024 16:31:11) Information: Token '5t8068' authorized successfully.
+(14.12.2024 16:31:12) Information: Token '5t8068' authorized successfully.
+(14.12.2024 16:31:15) Information: Token '5t8068' authorized successfully.
+(14.12.2024 16:31:15) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 16:31:15) Information: Token '5t8068' authorized successfully.
+(14.12.2024 16:31:18) Information: User with token '5t8068' logged out successfully.
+(14.12.2024 16:31:22) Information: Executing GetUserByLoginAsync method
+(14.12.2024 16:31:22) Information: User 'admin' authenticated successfully with token '5t2369'.
+(14.12.2024 16:31:22) Information: Token '5t2369' authorized successfully.
+(14.12.2024 16:31:24) Information: Token '5t2369' authorized successfully.
+(14.12.2024 16:31:28) Information: Executing GetFilteredClubsAsync method
+(14.12.2024 16:31:28) Information: Token '5t2369' authorized successfully.
+(14.12.2024 16:31:33) Information: Token '5t2369' authorized successfully.
+(14.12.2024 16:31:33) Information: Executing GetClubByIdAsync method
+(14.12.2024 16:31:39) Information: Token '5t2369' authorized successfully.
+(14.12.2024 16:31:39) Information: Executing AddReservationAsync method
+(14.12.2024 16:31:39) Information: Token '5t2369' authorized successfully.
+(14.12.2024 16:31:39) Information: Executing GetReservationsByUserIdAsync method
+(14.12.2024 16:31:54) Information: Token '5t2369' authorized successfully.
+(14.12.2024 16:31:55) Information: Token '5t2369' authorized successfully.
+(14.12.2024 16:31:56) Information: User with token '5t2369' logged out successfully.
+(15.12.2024 14:36:39) Information: Executing GetUserByLoginAsync method
+(15.12.2024 14:36:39) Information: User 'admin' authenticated successfully with token '5t2421'.
+(15.12.2024 14:36:39) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:36:40) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:36:45) Information: Executing GetFilteredClubsAsync method
+(15.12.2024 14:36:45) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:36:48) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:36:48) Information: Executing GetClubByIdAsync method
+(15.12.2024 14:36:51) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:36:51) Information: Executing AddReservationAsync method
+(15.12.2024 14:36:51) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:36:51) Information: Executing GetReservationsByUserIdAsync method
+(15.12.2024 14:36:54) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:36:58) Information: Executing GetFilteredClubsAsync method
+(15.12.2024 14:36:58) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:12) Information: Executing GetFilteredClubsAsync method
+(15.12.2024 14:37:12) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:21) Information: Executing GetFilteredClubsAsync method
+(15.12.2024 14:37:21) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:22) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:22) Information: Executing GetReservationsByUserIdAsync method
+(15.12.2024 14:37:47) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:47) Information: Executing GetReservationsByUserIdAsync method
+(15.12.2024 14:37:48) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:48) Information: Executing GetReservationByIdAsync method
+(15.12.2024 14:37:49) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:49) Information: Executing GetReservationByIdAsync method
+(15.12.2024 14:37:49) Information: Executing UpdateReservationAsync method
+(15.12.2024 14:37:49) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:49) Information: Executing GetReservationsByUserIdAsync method
+(15.12.2024 14:37:57) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:57) Information: Executing DeleteReservationAsync method
+(15.12.2024 14:37:57) Information: Token '5t2421' authorized successfully.
+(15.12.2024 14:37:57) Information: Executing GetReservationsByUserIdAsync method
+(15.12.2024 14:37:58) Information: User with token '5t2421' logged out successfully.

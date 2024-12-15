@@ -22,27 +22,27 @@ namespace Application.BusinessLogic
         {
             if (priceFrom != null && priceTo != null && priceFrom > priceTo)
             {
-                throw new ArgumentException("Cena od nesmí být vyšší než cena do.");
+                return new List<Club>();
             }
 
             if (capacity != null && capacity <= 0)
             {
-                throw new ArgumentException("Kapacita musí být větší než 0.");
+                return new List<Club>();
             }
 
             if (priceFrom != null && priceFrom < 0)
             {
-                throw new ArgumentException("Cena od musí být větší nebo rovna 0.");
+                return new List<Club>();
             }
 
             if (priceTo != null && priceTo < 0)
             {
-                throw new ArgumentException("Cena do musí být větší nebo rovna 0.");
+                return new List<Club>();
             }
 
             if (reservationDate < DateTime.UtcNow.Date)
             {
-                throw new ArgumentException("Datum rezervace nesmí být v minulosti.");
+                return new List<Club>();
             }
 
             return await _clubRepository.GetFilteredClubsAsync(name, address, type, capacity, priceFrom, priceTo, reservationDate.ToString("yyyy-MM-dd"));

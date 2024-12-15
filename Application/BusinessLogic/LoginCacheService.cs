@@ -11,6 +11,7 @@ namespace Application.BusinessLogic
     public class LoginCacheService : ILoginCacheService
     {
         private readonly ConcurrentDictionary<int, (DateTime LoginTime, DateTime ExpirationTime, string Token)> _userCache;
+
         private readonly TimeSpan _tokenLifetime;
 
         public LoginCacheService(TimeSpan tokenLifetime)
