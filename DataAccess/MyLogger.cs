@@ -6,7 +6,7 @@ using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Repositories
+namespace DataAccess
 {
     public class MyLogger : IMyLogger
     {
@@ -27,7 +27,7 @@ namespace DataAccess.Repositories
 
         public void LogToFile(string message)
         {
-            using(StreamWriter sw = new("log.txt", true))
+            using (StreamWriter sw = new("log.txt", true))
             {
                 sw.WriteLine(message);
             }

@@ -1192,3 +1192,26 @@
 (15.12.2024 14:37:57) Information: Token '5t2421' authorized successfully.
 (15.12.2024 14:37:57) Information: Executing GetReservationsByUserIdAsync method
 (15.12.2024 14:37:58) Information: User with token '5t2421' logged out successfully.
+(15.12.2024 15:06:40) Information: Executing GetUserByLoginAsync method
+(15.12.2024 15:06:40) Information: User 'admin' authenticated successfully with token '5t9537'.
+(15.12.2024 15:06:40) Information: Token '5t9537' authorized successfully.
+(15.12.2024 15:06:44) Information: Token '5t9537' authorized successfully.
+(15.12.2024 15:07:06) Warning: Authorization failed. Token is null or empty.
+(15.12.2024 15:07:14) Information: Token '5t9537' authorized successfully.
+(15.12.2024 15:07:25) Information: Executing GetUserByLoginAsync method
+(15.12.2024 15:07:25) Information: User 'admin' authenticated successfully with token '5t3182'.
+(15.12.2024 15:07:25) Information: Token '5t3182' authorized successfully.
+(15.12.2024 15:07:35) Information: Token '5t3182' authorized successfully.
+(15.12.2024 15:07:35) Information: Executing GetReservationsByUserIdAsync method
+(15.12.2024 15:07:38) Warning: Authorization failed. Token '5t9537' does not match the cached token.
+(15.12.2024 15:07:38) Warning: Authorization failed. Token '5t9537' does not match the cached token.
+(15.12.2024 15:07:39) Warning: Authorization failed. Token '5t9537' does not match the cached token.
+(15.12.2024 15:07:40) Warning: Authorization failed. Token '5t9537' does not match the cached token.
+(15.12.2024 15:07:40) Warning: Authorization failed. Token '5t9537' does not match the cached token.
+(15.12.2024 15:07:45) Warning: Authorization failed. Token '5t9537' does not match the cached token.
+(15.12.2024 15:07:46) Warning: Authorization failed. Token '5t9537' does not match the cached token.
+(15.12.2024 15:07:46) Warning: Authorization failed. Token '5t9537' does not match the cached token.
+(15.12.2024 15:07:48) Information: Token '5t3182' authorized successfully.
+(15.12.2024 15:07:48) Information: Token '5t3182' authorized successfully.
+(15.12.2024 15:08:05) Information: Token '5t3182' authorized successfully.
+(15.12.2024 15:08:05) Information: Executing GetReservationsByUserIdAsync method
